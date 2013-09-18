@@ -1,0 +1,111 @@
+::selection {
+	background-color: #E13300;
+	color: white;
+}
+::moz-selection {
+	background-color: #E13300;
+	color: white;
+}
+::webkit-selection {
+	background-color: #E13300;
+	color: white;
+}
+
+body {
+	background-color: #fff;
+	margin: 40px;
+	font: 13px/20px normal Helvetica, Arial, sans-serif;
+	color: #4F5155;
+}
+
+a {
+	color: #003399;
+	background-color: transparent;
+	font-weight: normal;
+}
+
+h1 {
+	color: #444;
+	background-color: transparent;
+	border-bottom: 1px solid #D0D0D0;
+	font-size: 19px;
+	font-weight: normal;
+	margin: 0 0 14px 0;
+	padding: 14px 15px 10px 15px;
+}
+
+code {
+	font-family: Consolas, Monaco, Courier New, Courier, monospace;
+	font-size: 12px;
+	background-color: #f9f9f9;
+	border: 1px solid #D0D0D0;
+	color: #002166;
+	display: block;
+	margin: 14px 0 14px 0;
+	padding: 12px 10px 12px 10px;
+}
+
+#body {
+	margin: 0 15px 0 15px;
+}
+
+p.footer {
+	text-align: right;
+	font-size: 11px;
+	border-top: 1px solid #D0D0D0;
+	line-height: 32px;
+	padding: 0 10px 0 10px;
+	margin: 20px 0 0 0;
+}
+
+#container {
+	margin: 10px;
+	border: 1px solid #D0D0D0;
+	-webkit-box-shadow: 0 0 8px #D0D0D0;
+}
+/**
+ * MENU BUTTONS
+ */
+#menu_nav {
+	display: block;
+	background-color: #2e2e2e;
+}
+#menu_nav ul {
+	background: url('../images/gradient-menu.png') repeat-x scroll 0 0;
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	width: 100%;
+}
+#menu_nav li {
+	display: block;
+	float: left;
+	height: 52px;
+	line-height: 52px;
+	vertical-align: center;
+}
+#menu_nav li a {
+	color: #acacac;
+	display: block;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+}
+/* Text inside menus */
+.menu_nav_text {
+	position: relative;
+	z-index: 2;
+}
+/* Menu's background on mouse over */
+.menu_nav_backgrounds {
+	background: url('../images/gradient-menu.png') repeat-x scroll 0 0 #f6f6f6;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 0;
+	z-index: 1;
+}
