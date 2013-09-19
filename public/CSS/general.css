@@ -1,19 +1,59 @@
-::selection {
-	background-color: #E13300;
-	color: white;
+/*Transitions*/
+.animate_background_position {
+	transition: background-position 333ms ease-in-out;
+	-webkit-transition: background-position 333ms ease-in-out;
 }
-::moz-selection {
-	background-color: #E13300;
-	color: white;
+.animate_color {
+	transition: color 333ms ease-in-out;
+	-webkit-transition: color 333ms ease-in-out;
 }
-::webkit-selection {
-	background-color: #E13300;
-	color: white;
+.animate_width {
+	transition: width 333ms ease-in-out;
+	-webkit-transition: width 333ms ease-in-out;
+}
+.animate_top {
+	transition: top 333ms ease-in-out;
+	-webkit-transition: top 333ms ease-in-out;
+}
+.animate_bottom {
+	transition: bottom 333ms ease-in-out;
+	-webkit-transition: bottom 333ms ease-in-out;
+}
+.animate_height {
+	transition: height 333ms ease-in-out;
+	-webkit-transition: height 333ms ease-in-out;
+}
+.animate_left {
+	transition: left 333ms ease-in-out;
+	-webkit-transition: left 333ms ease-in-out;
+}
+.animate_right {
+	transition: right 333ms ease-in-out;
+	-webkit-transition: right 333ms ease-in-out;
+}
+.animate_opacity {
+	transition: opacity 333ms ease-in-out;
+	-webkit-transition: opacity 333ms ease-in-out;
+}
+.animate_transform {
+	transition: transform 333ms ease-in-out;
+	-webkit-transition: -webkit-transform 333ms ease-in-out;
+}
+.animate_border_radius {
+	transition: border-radius 333ms ease-in-out;
+	-webkit-transition: border-radius 333ms ease-in-out;
+}
+.animate_background_color {
+	transition-property: background-color;
+	-webkit-transition-property: background-color;
+	transition-duration: 500ms;
+	-webkit-transition-duration: 500ms;
 }
 
 body {
+	width: 800px;
 	background-color: #fff;
-	margin: 40px;
+	margin: auto;
 	font: 13px/20px normal Helvetica, Arial, sans-serif;
 	color: #4F5155;
 }
@@ -27,7 +67,6 @@ a {
 h1 {
 	color: #444;
 	background-color: transparent;
-	border-bottom: 1px solid #D0D0D0;
 	font-size: 19px;
 	font-weight: normal;
 	margin: 0 0 14px 0;
@@ -61,17 +100,60 @@ p.footer {
 #container {
 	margin: 10px;
 	border: 1px solid #D0D0D0;
+	-moz-box-shadow: 0 0 8px #D0D0D0;
 	-webkit-box-shadow: 0 0 8px #D0D0D0;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+#container p {
+	text-align: justify;
+	
+
+}
+
+#header {
+	/*background: linear-gradient(bottom, rgb(255,161,60) 48%, rgb(255,119,8) 87%);
+	 background: -o-linear-gradient(bottom, rgb(255,161,60) 48%, rgb(255,119,8) 87%);
+	 background: -moz-linear-gradient(bottom, rgb(255,161,60) 48%, rgb(255,119,8) 87%);
+	 background: -webkit-linear-gradient(bottom, rgb(255,161,60) 48%, rgb(255,119,8) 87%);
+	 background: -ms-linear-gradient(bottom, rgb(255,161,60) 48%, rgb(255,119,8) 87%);
+	 background: -webkit-gradient(
+	 linear,
+	 left bottom,
+	 left top,
+	 color-stop(0.48, rgb(255,161,60)),
+	 color-stop(0.87, rgb(255,119,8))
+	 );
+	 border-bottom-left-radius: 10px;
+	 border-bottom-right-radius: 10px;*/
+}
+
+#logo {
+	margin-top: 10px;
+	width: 80px;
+	position: absolute;
+}
+#logo img {
+	border-radius: 10px;
+}
+#slogan {
+	width: 600px;
+	position: relative;
+	margin-left: 50px;
+}
+#slogan a {
+	color: #5D5F69;
+	text-decoration: none;
 }
 /**
  * MENU BUTTONS
  */
 #menu_nav {
 	display: block;
-	background-color: #2e2e2e;
+	background: #2e2e2e;
 }
 #menu_nav ul {
-	background: url('../images/gradient-menu.png') repeat-x scroll 0 0;
+	background: url('../Images/gradient-menu.png') repeat-x scroll 0 0;
 	margin: 0;
 	list-style: none;
 	padding: 0;
@@ -108,4 +190,51 @@ p.footer {
 	top: 0;
 	width: 0;
 	z-index: 1;
+}
+
+.submenu_nav {
+	display: none;
+}
+
+.submenu_nav li {
+	width: 200px;
+}
+
+#menu_nav li a:hover {
+	color: #363636;
+}
+#menu_nav li a:hover .menu_nav_backgrounds {
+	width: 100%;
+}
+#start_btn {
+	width: 10%;
+}
+#who_btn {
+	width: 14%;
+}
+#mision_btn {
+	width: 10%;
+}
+#vision_btn {
+	width: 10%;
+}
+#rules_btn {
+	width: 14%;
+}
+#rules_btn:hover .submenu_nav {
+	display: inline;
+}
+#personal_btn {
+	width: 15%;
+}
+#ubication_btn {
+	width: 14%;
+}
+#contact_btn {
+	width: 12%;
+	*width: 16.87%; /*  IE7 "the bastard". Thank you for breaking ours toys. */
+}
+
+#footer {
+	text-align: center;
 }
